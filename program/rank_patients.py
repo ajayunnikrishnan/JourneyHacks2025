@@ -7,7 +7,7 @@ WEIGHTS = {
     'age': 0.3,
     'blood_pressure': 0.2,
     'heart_rate': 0.15,
-    'oxygen_saturation': -0.25,  # 
+    'oxygen_saturation': -0.25,  
     'respiratory_rate': 0.2,
     'cholesterol_level': 0.1,
     'bmi': 0.15,  # HIgh BMI might be dangerous
