@@ -1,0 +1,51 @@
+patient_id,name,age,condition_description,urgency_rank
+1,Alice,30,"chest pain and difficulty breathing",0
+2,Bob,45,"high fever and severe headache",0
+3,Charlie,25,"severe injury in accident",0
+4,Dana,50,"mild headache and slight dizziness",0
+5,Edward,40,"broken arm from fall",0
+6,Fiona,28,"severe allergic reaction",0
+7,George,65,"unconscious after accident",0
+8,Hannah,33,"stroke symptoms and confusion",0
+9,Ian,55,"heart attack symptoms",0
+10,Jane,60,"severe burns",0
+11,Kevin,22,"light cold",0
+12,Laura,34,"dizziness",0
+13,Michael,47,"difficulty breathing",0
+14,Nina,29,"severe back pain",0
+15,Oliver,36,"persistent vomiting",0
+16,Paula,31,"severe abdominal pain",0
+17,Quentin,52,"loss of consciousness",0
+18,Rachel,48,"severe joint pain",0
+19,Steve,39,"acute anxiety attack",0
+20,Tina,27,"uncontrolled bleeding",0
+21,Uma,41,"high blood pressure crisis",0
+22,Victor,38,"severe dehydration",0
+23,Wendy,46,"moderate respiratory distress",0
+24,Xander,53,"sudden weakness",0
+25,Yvonne,37,"extreme fatigue",0
+26,Zach,44,"intense migraine",0
+27,Adam,30,"worsening chest tightness",0
+28,Beth,35,"sudden vision loss",0
+29,Carl,42,"severe joint pain",0
+30,Diane,26,"acute anxiety attack",0
+31,Ethan,32,"persistent vomiting",0
+32,Faith,29,"uncontrolled bleeding",0
+33,Greg,50,"high blood pressure crisis",0
+34,Heidi,48,"severe dehydration",0
+35,Ivy,31,"moderate respiratory distress",0
+36,Jack,39,"sudden weakness",0
+37,Kate,34,"extreme fatigue",0
+38,Liam,28,"intense migraine",0
+39,Mia,26,"worsening chest tightness",0
+40,Noah,47,"sudden vision loss",0
+41,Olivia,52,"severe chest pain",0
+42,Peter,40,"high fever",0
+43,Quincy,33,"mild headache",0
+44,Rose,36,"broken arm",0
+45,Sam,29,"severe injury",0
+46,Tara,27,"light cold",0
+47,Uri,31,"difficulty breathing",0
+48,Vera,35,"dizziness",0
+49,Will,38,"unconscious",0
+50,Xena,45,"stroke symptoms",0
