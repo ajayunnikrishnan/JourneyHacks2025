@@ -14,18 +14,22 @@ WEIGHTS = {
     'severe_abdominal_pain': 0.20,       
     'persistent_vomiting': 0.10        
 }
+
 def calculate_severity_score(patient, weights):
     """
     Calculate severity score based on the weighted sum of patient features.
     """
-    score = sum(weights[feature] * patient[feature] for feature in weights if feature in patient)
-    return score
+    return sum(weights[feature] * patient[feature] for feature in weights if feature in patient)
 
 def process_patient_data(csv_file):
     """
     Read patient data from a CSV file, compute severity scores, and sort patients.
     """
     df = pd.read_csv(csv_file)
+
+    # Ensure 'patient_id' exists
+    if 'patient_id' not in df.columns:
+        raise ValueError("Dataset must contain a 'patient_id' column.")
 
     # Ensure all required weight keys exist in the dataset
     required_features = set(WEIGHTS.keys())
@@ -37,14 +41,11 @@ def process_patient_data(csv_file):
     df['Severity_Score'] = df.apply(lambda row: calculate_severity_score(row, WEIGHTS), axis=1)
 
     # Sort patients by severity score in descending order
-    df_sorted = df.sort_values(by='Severity_Score', ascending=False)
+    df_sorted = df[['patient_id', 'Severity_Score']].sort_values(by='Severity_Score', ascending=False)
 
-    # Print sorted data in terminal
+    # Print only patient_id and severity score
     print(df_sorted.to_string(index=False))
 
-    return df_sorted
-
-# Example usage
 if __name__ == "__main__":
     csv_filename = "../data/patient_data.csv"  # Update with the actual file path if needed
-    sorted_patients = process_patient_data(csv_filename)
+    process_patient_data(csv_filename)
