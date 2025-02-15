@@ -2,18 +2,18 @@ import pandas as pd
 
 # Define the weights for each feature
 WEIGHTS = {
-    'age': 0.3,
-    'blood_pressure': 0.2,
-    'heart_rate': 0.15,
-    'oxygen_saturation': -0.25,  # Negative because lower saturation is worse
-    'respiratory_rate': 0.2,
-    'cholesterol_level': 0.1,
-    'bmi': 0.15,  # Higher BMI may indicate health risks
-    'glucose_level': 0.2,  # Higher glucose levels can be concerning
-    'smoking_status': 0.3,  # Smoking contributes to health risks
-    'exercise_frequency': -0.2  # More exercise is beneficial, so negative weight
+    'age': 0.10,                        
+    'chest_pain': 0.30,               
+    'difficulty_breathing': 0.25,     
+    'unconsciousness': 0.35,            
+    'stroke_symptoms': 0.35,            
+    'severe_injury': 0.20,             
+    'uncontrolled_bleeding': 0.45,      
+    'severe_allergic_reaction': 0.35,   
+    'high_fever': 0.15,               
+    'severe_abdominal_pain': 0.20,       
+    'persistent_vomiting': 0.10        
 }
-
 def calculate_severity_score(patient, weights):
     """
     Calculate severity score based on the weighted sum of patient features.
